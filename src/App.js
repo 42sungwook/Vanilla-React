@@ -1,11 +1,7 @@
-import { createElement, Fragment } from './framework'
+import { Button } from './Button'
 
 function Header({ name }) {
   return <h1>Hello, {name}!</h1>
-}
-
-function Button({ onClick, children }) {
-  return <button onClick={onClick}>{children}</button>
 }
 
 export function App() {
@@ -21,18 +17,3 @@ export function App() {
     </div>
   )
 }
-
-function render(component, container) {
-  const app = createElement(component)
-  container.appendChild(app)
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  const root = document.getElementById('app')
-  if (!root) {
-    const root = document.createElement('div')
-    root.id = 'root'
-    document.body.appendChild(root)
-  }
-  render(App, root)
-})
