@@ -7,11 +7,6 @@ function Header({ name }) {
 export function App() {
   return (
     <div>
-      <>
-        <p>a</p>
-        <p>b</p>
-        <div>c</div>
-      </>
       <Header name="World" />
       <Button onClick={() => alert('Button clicked!')}>Click Me</Button>
     </div>

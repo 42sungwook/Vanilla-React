@@ -1,3 +1,12 @@
+import '@/button.scss'
+
 export function Button({ onClick, children }) {
-  return <button onClick={onClick}>{children}</button>
+  return (
+    <button
+      class="clickBtn"
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  )
 }

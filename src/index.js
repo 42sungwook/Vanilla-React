@@ -1,5 +1,6 @@
-import { createElement } from './framework.js'
-import { App } from './App.js'
+import { createElement } from '@/framework.js'
+import { App } from '@/App.js'
+import '@/main.scss'
 
 function render(component, container) {
   const app = createElement(component)
