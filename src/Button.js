@@ -1,9 +1,9 @@
-import '@/button.scss'
+import styles from '@/button.module.scss'
 
 export function Button({ onClick, children }) {
   return (
     <button
-      class="clickBtn"
+      class={styles.clickBtn}
       onClick={onClick}
     >
       {children}
