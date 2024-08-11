@@ -33,5 +33,10 @@ module.exports = {
     },
     compress: true,
     port: 9000
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
   }
 }

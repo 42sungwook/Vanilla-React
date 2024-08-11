@@ -1,4 +1,4 @@
-import { Button } from './Button'
+import { Button } from '@/Button'
 
 function Header({ name }) {
   return <h1>Hello, {name}!</h1>
