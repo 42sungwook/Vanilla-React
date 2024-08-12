@@ -1,15 +1,13 @@
 import { useState } from '@/framework'
 import { Button } from '@/Button'
-import { Component } from '@/Component'
 
-export function App() {
+export const Component = () => {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      <p>Count: {count}</p>
+      <p>Count2: {count}</p>
       <Button onClick={() => setCount(count + 1)}>Increment</Button>
-      <Component />
     </div>
   )
 }

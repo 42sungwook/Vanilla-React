@@ -1,17 +1,12 @@
-import { createElement } from '@/framework.js'
+import { createElement, render } from '@/framework.js'
 import { App } from '@/App.js'
 import '@/main.scss'
-
-function render(component, container) {
-  const app = createElement(component)
-  container.appendChild(app)
-}
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('app')
   if (!root) {
     const root = document.createElement('div')
-    root.id = 'root'
+    root.id = 'app'
     document.body.appendChild(root)
   }
   render(App, root)
