@@ -10,14 +10,5 @@
         "runtime": "classic"
       }
     ]
-  ],
-  "plugins": [
-    [
-      "@babel/plugin-transform-react-jsx",
-      {
-        "pragma": "Framework.createElement",
-        "pragmaFrag": "Framework.Fragment"
-      }
-    ]
   ]
 }
