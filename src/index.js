@@ -1,4 +1,4 @@
-import { createElement, render } from '@/framework.js'
+import { createElement, render } from '@/framework'
 import { App } from '@/App.js'
 import '@/main.scss'
 
@@ -9,5 +9,5 @@ document.addEventListener('DOMContentLoaded', () => {
     root.id = 'app'
     document.body.appendChild(root)
   }
-  render(App, root)
+  render(createElement(App), root)
 })

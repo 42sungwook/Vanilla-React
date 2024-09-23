@@ -3,7 +3,7 @@ import styles from '@/button.module.scss'
 export function Button({ onClick, children }) {
   return (
     <button
-      class={styles.clickBtn}
+      className={styles.clickBtn}
       onClick={onClick}
     >
       {children}

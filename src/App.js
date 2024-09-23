@@ -8,7 +8,7 @@ export function App() {
   return (
     <div>
       <p>Count: {count}</p>
-      <Button onClick={() => setCount(count + 1)}>Increment</Button>
+      <Button onClick={() => setCount(count + 1)}>{'Increment'}</Button>
       <Component />
     </div>
   )
